@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="490.0" prefWidth="732.0" style="-fx-background-color: #ebf82f;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CompareControl">
+   <children>
+      <Button fx:id="compareButton" layoutX="287.0" layoutY="273.0" mnemonicParsing="false" onAction="#pressTheButton" text="Сравнить" textAlignment="CENTER" textFill="#f72fb1f7" textOverrun="CLIP">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Button>
+      <Label fx:id="buttonLabel" layoutX="463.0" layoutY="287.0" text="Кнопка не нажата" textFill="#0da12f">
+         <font>
+            <Font name="Bauhaus 93" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="textFieldOneLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="355.0" prefHeight="53.0" prefWidth="729.0" text="Enter первого текстового поля  не нажат" textAlignment="CENTER" textFill="#3518ee" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="textFieldTwoLabel" alignment="CENTER" layoutX="-2.0" layoutY="415.0" prefHeight="59.0" prefWidth="737.0" text="Enter второго текстового поля не нажат" textFill="#38cada">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkBox" layoutX="256.0" layoutY="333.0" mnemonicParsing="false" text="Показывать позицию расхождения" textFill="#710aff">
+         <font>
+            <Font name="Arial Italic" size="12.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="textField1" layoutX="94.0" layoutY="22.0" onAction="#textFieldOneAction" prefHeight="61.0" prefWidth="541.0" style="-fx-background-color: #3bf2e5;" text="c:\Users\k.kovalenko\1.txt">
+         <opaqueInsets>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets>
+         <font>
+            <Font name="Javanese Text" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textField2" layoutX="94.0" layoutY="142.0" onAction="#textFieldTwoAction" prefHeight="25.0" prefWidth="541.0" style="-fx-background-color: #08ff77;" text="c:\Users\k.kovalenko\1.txt">
+         <opaqueInsets>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </opaqueInsets>
+         <font>
+            <Font name="Calisto MT" size="18.0" />
+         </font>
+         <effect>
+            <Reflection bottomOpacity="0.12" fraction="1.0" topOpacity="0.08" />
+         </effect>
+      </TextField>
+      <DatePicker fx:id="datePicker" layoutX="42.0" layoutY="284.0" onAction="#chooseTheDate" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #ff5e0a;" AnchorPane.bottomAnchor="181.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="553.0" AnchorPane.topAnchor="284.0" />
+      <Label fx:id="result" alignment="CENTER" contentDisplay="CENTER" layoutY="220.0" prefHeight="17.0" prefWidth="729.0" textAlignment="CENTER" textFill="#990fab">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-6.0" layoutY="331.0" prefHeight="20.0" prefWidth="256.0" text="дата не выбрана" textAlignment="CENTER" textFill="#36a5b5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="669.0" layoutY="451.0" mnemonicParsing="false" onAction="#close" text="close">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+   </opaqueInsets>
+</AnchorPane>
