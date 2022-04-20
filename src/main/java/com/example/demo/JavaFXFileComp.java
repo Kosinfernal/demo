@@ -33,8 +33,8 @@ public class JavaFXFileComp extends Application {
         rootNode.setAlignment(Pos.CENTER);
         Scene scene = new Scene(rootNode, 180, 180);
         stage.setScene(scene);
-        firstTextField = new TextField("c:\\Users\\k.kovalenko\\1.txt");
-        secondTextField = new TextField("c:\\Users\\k.kovalenko\\1.txt");
+        firstTextField = new TextField("c:\\Program Files\\Java\\Projects\\1.txt");
+        secondTextField = new TextField("c:\\Program Files\\Java\\Projects\\1.txt");
         firstTextField.setPrefColumnCount(12);
         secondTextField.setPrefColumnCount(12);
         firstTextField.setPromptText("Enter file name.");

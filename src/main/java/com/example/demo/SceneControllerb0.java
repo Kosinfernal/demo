@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class SceneControllerb0 {
     @FXML
@@ -26,7 +27,7 @@ public class SceneControllerb0 {
 
     @FXML
     protected void switchtoScene1(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("scene1.fxml"));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("scene1.fxml")));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -35,7 +36,7 @@ public class SceneControllerb0 {
 
     @FXML
     protected void switchtoScene2(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("scene2.fxml"));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("scene2.fxml")));
         stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
